@@ -71,7 +71,7 @@ html {
 }
 html,
 body {
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
 }
 content,
 titlebar {
@@ -104,7 +104,7 @@ h4,
 h5,
 h6 {
   font-style: unset;
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
   font-weight: 600;
   color: #5B83AD;
 }
@@ -215,7 +215,7 @@ blockquote {
   margin: 2rem 2rem 2.5rem 2rem;
   position: relative;
   /*Font*/
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
   font-size: 14px;
   color: #5a5a5a;
   /*Box Shadow - (Optional)*/
@@ -317,6 +317,21 @@ del {
 /**
  * Control UI (optional)
  */
+.preference-item {
+  color: #646464;
+}
+.unibody-window a {
+  border-bottom: 0px;
+}
+.dropdown-menu span {
+  color: #c8c8c8;
+}
+.dropdown-menu .active span {
+  color: #fff;
+}
+.preference-item-setting span {
+  margin-left: .5rem;
+}
 .sidebar-content {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }

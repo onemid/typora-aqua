@@ -71,7 +71,7 @@ html {
 }
 html,
 body {
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
   color: #ffffff;
 }
 content {
@@ -107,7 +107,7 @@ h4,
 h5,
 h6 {
   font-style: unset;
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
   font-weight: 600;
   color: #9dbe7d !important;
 }
@@ -215,7 +215,7 @@ blockquote {
   margin: 2rem 2rem 2.5rem 2rem;
   position: relative;
   /*Font*/
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
   font-size: 14px;
   color: #ffffff;
   /*Box Shadow - (Optional)*/
@@ -289,7 +289,7 @@ a {
   text-decoration: none;
   border-bottom: thin;
   color: #c7dbf6;
-  border-bottom: .1rem dotted #71a5ea;
+  border-bottom: .1rem dotted #87b3ed;
 }
 img {
   padding: .25rem;
@@ -360,6 +360,21 @@ del {
 /**
  * Control UI on Windows/Linux (optional)
  */
+.preference-item {
+  color: #646464;
+}
+.unibody-window a {
+  border-bottom: 0px;
+}
+.dropdown-menu span {
+  color: #c8c8c8;
+}
+.dropdown-menu .active span {
+  color: #fff;
+}
+.preference-item-setting span {
+  margin-left: .5rem;
+}
 .cm-s-inner .CodeMirror-guttermarker,
 .cm-s-inner .CodeMirror-guttermarker-subtle,
 .cm-s-inner .CodeMirror-linenumber {
