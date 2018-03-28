@@ -1,5 +1,6 @@
 # Aqua Theme
-The theme for typora.
+
+Aqua --- the whole new experience on Typora
 
 ![aqua.png](src/aqua.png)
 
