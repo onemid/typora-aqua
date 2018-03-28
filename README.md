@@ -8,6 +8,10 @@
 
 ![Aqua-green.png](src/Aqua-green.png)
 
+![Aqua-blue-CJK.png](src/Aqua-blue-CJK.png)
+
+![Aqua-green-CJK.png](src/Aqua-green-CJK.png)
+
 We recommended you to use "Noto Sans CJK TC" and "Noto Serif" to experience the power of Aqua theme.
 
 ## Adding Noto Sans and Noto Serif Fonts to Aqua
