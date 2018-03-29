@@ -318,7 +318,6 @@ del {
  * Control UI (optional)
  */
 #typora-sidebar {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   background-color: #263238;
 }
 #typora-sidebar span {
@@ -360,10 +359,20 @@ del {
 /**
  * Control UI on Windows/Linux (optional)
  */
+.megamenu-content span,
+.dropdown-menu span {
+  line-height: normal;
+}
 .preference-item {
   color: #646464;
 }
-.unibody-window a {
+.megamenu-section span,
+.megamenu-section i,
+.megamenu-section table {
+  color: #000;
+}
+.megamenu-menu a,
+.dropdown-menu a {
   border-bottom: 0px;
 }
 .dropdown-menu span {

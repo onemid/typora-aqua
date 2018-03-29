@@ -317,10 +317,15 @@ del {
 /**
  * Control UI (optional)
  */
+.megamenu-content span,
+.dropdown-menu span {
+  line-height: normal;
+}
 .preference-item {
   color: #646464;
 }
-.unibody-window a {
+.megamenu-menu a,
+.dropdown-menu a {
   border-bottom: 0px;
 }
 .dropdown-menu span {
@@ -331,6 +336,9 @@ del {
 }
 .preference-item-setting span {
   margin-left: .5rem;
+}
+#typora-sidebar span {
+  line-height: unset !important;
 }
 .sidebar-content {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
