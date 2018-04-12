@@ -1,6 +1,6 @@
 :root {
   --bg-color: #fff;
-  --text-color: #000000;
+  --text-color: #000;
   --md-char-color: #C7C5C5;
   --meta-content-color: #5b808d;
   --blur-text-color: #d5d5d5;
@@ -61,6 +61,24 @@
   src: url(aqua/CJK_fonts/NotoSansCJKtc-Bold.otf) format('opentype');
 }
 @font-face {
+  font-family: 'CompositeFontsBodySC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(aqua/CJK_fonts/NotoSansCJKsc-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'CompositeFontsBodySC';
+  font-style: medium;
+  font-weight: 600;
+  src: url(aqua/CJK_fonts/NotoSansCJKsc-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'CompositeFontsBodySC';
+  font-style: bold;
+  font-weight: 800;
+  src: url(aqua/CJK_fonts/NotoSansCJKsc-Bold.otf) format('opentype');
+}
+@font-face {
   font-family: 'CompositeFontsEm';
   font-style: italic;
   font-weight: 600;
@@ -71,7 +89,7 @@ html {
 }
 html,
 body {
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'CompositeFontsBodySC', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
 }
 content,
 titlebar {
@@ -104,7 +122,7 @@ h4,
 h5,
 h6 {
   font-style: unset;
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'CompositeFontsBodySC', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
   font-weight: 600;
   color: #5B83AD;
 }
@@ -215,7 +233,7 @@ blockquote {
   margin: 2rem 2rem 2.5rem 2rem;
   position: relative;
   /*Font*/
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'CompositeFontsBodySC', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
   font-size: 14px;
   color: #5a5a5a;
   /*Box Shadow - (Optional)*/
@@ -337,14 +355,20 @@ del {
 .preference-item-setting span {
   margin-left: .5rem;
 }
+.modal-content span {
+  line-height: normal;
+}
+.modal-title span {
+  line-height: normal;
+}
 #typora-sidebar span {
-  line-height: unset !important;
+  line-height: normal;
 }
 .sidebar-content {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 .sidebar-content span {
-  line-height: unset !important;
+  line-height: normal;
 }
 .dropdown-menu {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;

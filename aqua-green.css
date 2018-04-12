@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #363b40;
-  --text-color: #ffffff;
+  --bg-color: #363B40;
+  --text-color: #fff;
   --md-char-color: #C7C5C5;
   --meta-content-color: #5b808d;
   --blur-text-color: #6a6a6a;
@@ -61,6 +61,24 @@
   src: url(aqua/CJK_fonts/NotoSansCJKtc-Bold.otf) format('opentype');
 }
 @font-face {
+  font-family: 'CompositeFontsBodySC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(aqua/CJK_fonts/NotoSansCJKsc-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'CompositeFontsBodySC';
+  font-style: medium;
+  font-weight: 600;
+  src: url(aqua/CJK_fonts/NotoSansCJKsc-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'CompositeFontsBodySC';
+  font-style: bold;
+  font-weight: 800;
+  src: url(aqua/CJK_fonts/NotoSansCJKsc-Bold.otf) format('opentype');
+}
+@font-face {
   font-family: 'CompositeFontsEm';
   font-style: italic;
   font-weight: 600;
@@ -71,11 +89,11 @@ html {
 }
 html,
 body {
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
-  color: #ffffff;
+  font-family: 'CompositeFontsBody', 'CompositeFontsBodySC', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
+  color: #fff;
 }
 content {
-  background-color: #363b40;
+  background-color: #363B40;
 }
 p,
 span {
@@ -107,7 +125,7 @@ h4,
 h5,
 h6 {
   font-style: unset;
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'CompositeFontsBodySC', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
   font-weight: 600;
   color: #9dbe7d !important;
 }
@@ -206,7 +224,7 @@ tbody th {
   border-top: 1px solid #dee2e6;
 }
 li {
-  color: #ffffff;
+  color: #fff;
 }
 blockquote {
   display: block;
@@ -215,9 +233,9 @@ blockquote {
   margin: 2rem 2rem 2.5rem 2rem;
   position: relative;
   /*Font*/
-  font-family: 'CompositeFontsBody', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
+  font-family: 'CompositeFontsBody', 'CompositeFontsBodySC', 'Helvetica Neue', Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
   font-size: 14px;
-  color: #ffffff;
+  color: #fff;
   /*Box Shadow - (Optional)*/
   /*Borders - (Optional)*/
   border-left-style: solid;
@@ -293,7 +311,7 @@ a {
 }
 img {
   padding: .25rem;
-  background-color: #363b40;
+  background-color: #363B40;
   border: 1px solid #a1a1a1;
   border-radius: .25rem;
   max-width: 100%;
@@ -317,11 +335,26 @@ del {
 /**
  * Control UI (optional)
  */
+.modal-content span {
+  line-height: normal;
+}
+.modal-title span {
+  line-height: normal;
+}
 #typora-sidebar {
   background-color: #263238;
 }
 #typora-sidebar span {
+  line-height: normal;
+}
+.sidebar-content {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+.sidebar-content span {
   line-height: unset !important;
+}
+.dropdown-menu {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 .sidebar-tabs {
   border-bottom: 3px solid #556370;
@@ -348,7 +381,7 @@ del {
   background-color: #596169;
 }
 .dropdown-menu {
-  color: #ffffff;
+  color: #fff;
 }
 #write div.md-toc-tooltip {
   background-color: #596169;
@@ -356,6 +389,16 @@ del {
 /**
  * Control UI on Mac (optional)
  */
+#md-searchpanel,
+.on-search-panel-open header,
+.modal-content,
+.popover,
+.context-menu {
+  background-color: #fff;
+}
+.popover.bottom > .arrow:after {
+  border-bottom-color: #fff;
+}
 /**
  * Control UI on Windows/Linux (optional)
  */
